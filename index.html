@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <title>Formulário Excell</title>
+</head>
+
+<body>
+    <h1>Preencha o formulário</h1>
+    <form class="form" action="" method="POST">
+        <img class="excell-icon" src="./src/img/excell-icon.png" alt="">
+        <p>
+            <label for="">Nome</label>
+            <input type="text" name="name" placeholder="Digite seu nome." required>
+        </p>
+        <p>
+            <label for="">E-mail</label>
+            <input type="email" name="email" placeholder="Digite seu e-mail." required>
+        </p>
+        <p id="button-sub" class="button-field">
+            <button class="button-submit" type="submit">Enviar</button>
+        </p>
+    </form>
+    <div id="button-dow" class="button-excell">
+       <button class="button-down" type="submit">Visualizar planilha</button>
+    </div>
+    <div class="modal">
+        <div class="conteudo-modal">
+            <span class="fechar-modal">X</span>
+            <iframe id="table"
+                src="https://docs.google.com/spreadsheets/d/1gkXCLWs6rUOvp5D_lp_2TFAVnR3W6GEwO-dxRVqH8cw/edit?usp=sharing"
+                width="430" height="350" frameborder="0" widget=false >
+            </iframe>
+        </div>
+    </div>
+
+    <script src="./src/js/script.js"></script>
+</body>
+
+</html>
